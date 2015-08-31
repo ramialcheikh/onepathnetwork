@@ -1,0 +1,180 @@
+.white-tile {
+  border: solid 1px #eee;
+  background: #fff;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.editing-list-header-notice {
+  margin-top: 20px;
+}
+
+.list-editor {
+  padding-bottom: 20px;
+
+  .title-field {
+    font-weight: bold;
+    font-size: medium;
+  }
+  .category-field {
+    margin-bottom: 0px;
+  }
+  .banner-container {
+    width: 100%;
+    cursor: pointer;
+  }
+  .banner-missing-error {
+    display: none;
+  }
+  .banner-container.has-error {
+    border: solid 2px #e74c3c;
+    .banner-missing-error {
+      display: block;
+    }
+  }
+  .banner-placeholder {
+    text-align: center;
+    background: #BBB;
+    color: #FFF;
+    padding: 45px 10px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .item-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    border: solid 1px #ddd;
+  }
+  .item-number{
+    background: #ff7f20;
+    color: #fff;
+    height: 2.6em;
+    line-height: 2.6em;
+    //width: 2.6em;
+    text-align: center;
+    font-weight: bold;
+  }
+  .item-description-field {
+    margin-top: 10px;
+  }
+
+  .item-media-container {
+    position: relative;
+    .media-video {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  .media-actions-bar {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .item-media-placeholder {
+    //background: #bbb;
+    text-align: center;
+    padding: 40px 10px;
+    color: #aaa;
+    border: dashed 2px #ccc;
+    cursor: pointer;
+  }
+  .add-item-btn-block {
+    margin-bottom: 20px;
+  }
+
+  .dialog {
+    .heading {
+      padding: 0 0 .5em !important;
+    }
+    .loading-anim {
+      margin: 30px auto 0px !important;
+    }
+    .dialog__content {
+      position: relative;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .status-icon {
+      margin-bottom: 10px;
+    }
+    .success-icon, .default-icon, .error-icon, .warning-icon {
+      display: none;
+    }
+
+    &.dialog-success {
+      .success-icon {
+        display: block;
+      }
+    }
+
+    &.dialog-error {
+      .error-icon {
+        display: block;
+      }
+    }
+
+    &.dialog-default {
+      .default-icon {
+        display: block;
+      }
+    }
+
+    &.dialog-warning {
+      .warning-icon {
+        display: block;
+      }
+    }
+  }
+  blockquote {
+    border-left: none;
+    text-align: left;
+    background: #f8f8f8;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 20px;
+    border: solid 1px #eee;
+  }
+}
+
+
+.list-editor-validation-error {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.show-validation-error .list-editor-validation-error {
+  display: block;
+}
+
+
+  @media (min-width: 768px) {
+    .banner-placeholder {
+      height: 150px;
+      width: 100%;
+    }
+    .description-field {
+      height: 110px !important;
+      display: block;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .banner-container {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .select2-container {
+      min-width: 180px;
+    }
+  }

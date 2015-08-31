@@ -1,0 +1,12 @@
+{
+  "showFacebookComments" : {
+    "type": "boolean",
+    "title": "Enable Facebook comments for @@plural@@?",
+    "description": "Display Facebook comments box below @@singular@@ results after a user finishes a @@singular@@"
+  },
+  "showSharePromptModal" : {
+    "type": "boolean",
+    "title": "Show share prompt modal",
+    "description": "Show share prompt modal after @@singular@@ result is shown to the user"
+  }
+}

@@ -1,0 +1,58 @@
+
+@profile-head-bg-color : mix(@brand-primary, @inverse, 9%);
+.profile-header {
+  //background: #ebedef;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 20px;
+  text-align: center;
+  background: @profile-head-bg-color;
+}
+.profile-header .profile-pic {
+  background: #fff;
+  border: solid 1px #e5e5e5;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+}
+.profile-header .user-name{
+  padding: 5px 30px;
+  border-bottom: solid 2px @hr-border;
+  display: inline-block;
+}
+.profile-header .stats-list {
+  font-size: 1em;
+  color: @gray-dark;
+  padding: 0px 40px;
+  margin-bottom: 0px;
+  display: block;
+}
+.profile-header .star-icon {
+  color: #ffb529;
+}
+
+.edit-profile {
+  .profile-pic {
+    width: 100%;
+    max-width: 100px;
+    margin: 0px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 479px) {
+  .profile-header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .user-name {
+      font-size: 1.6em;
+    }
+  }
+}

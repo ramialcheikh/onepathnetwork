@@ -1,0 +1,650 @@
+{
+  "type": "array",
+  "required": true,
+  "title": "Language",
+  "items": {
+    "type": "object",
+    "title": "Language",
+    "properties": {
+      "name": {
+        "type": "text",
+        "title": "Language name",
+        "required": true
+      },
+      "code" : {
+        "type": "text",
+        "title": "Language code (example: en, es, etc)",
+        "required": true
+      },
+      "fb_code" : {
+        "type": "text",
+        "title": "Facebook locale code (eg: en_US, es_ES, etc)",
+        "description": "<a href=\"https://www.facebook.com/translations/FacebookLocales.xml\">Click here for Facebook codes reference</a>",
+        "required": true
+      },
+      "direction" : {
+        "type": "text",
+        "title": "Direction",
+        "required": true,
+        "enum": [
+          "ltr",
+          "rtl"
+        ],
+        "default" : "ltr"
+      },
+      "strings": {
+        "type": "object",
+        "title": "Strings",
+        "properties": {
+          "categories" : {
+            "title": "'Categories'",
+            "default": "Categories"
+          },
+          "list" : {
+            "title": "'List'",
+            "default": "List"
+          },
+          "lists" : {
+            "title": "'Lists' in navbar",
+            "default": "Lists"
+          },
+          "latest" : {
+            "title": "'Latest' in navbar",
+            "default": "Latest"
+          },
+          "popular" : {
+            "title": "'Popular' in navbar",
+            "default": "Popular"
+          },
+          "latestLists" : {
+            "title": "'Latest Lists' in heading",
+            "default": "Latest Lists"
+          },
+          "popularLists" : {
+            "title": "'Popular Lists' in heading",
+            "default": "Popular Lists"
+          },
+          "next": {
+            "title": "'Next'"
+          },
+          "previous": {
+            "title": "'Previous'"
+          },
+          "comments": {
+            "title": "'Comments' : Facebook comments box heading",
+            "default": "Comments"
+          },
+          "contactUs":{
+            "title": "'Contact us' in navbar",
+            "default": "Contact us"
+          },
+          "likeUsOnFB" :{
+            "title": "'Like us on Facebook'",
+            "default": "Like us on Facebook"
+          },
+          "shareListPromptMessage": {
+            "title": "'Liked this list? Share it with your friends!'",
+            "default": "Liked this list? Share it with your friends!"
+          },
+          "shareOnFB" :{
+            "title": "'Share on Facebook'",
+            "default": "Share on Facebook"
+          },
+          "shareOnTwitter" :{
+            "title": "'Share on Twitter'",
+            "default": "Share on Twitter"
+          },
+          "shareOnPinterest" :{
+            "title": "'Share on Pinterest'",
+            "default": "Share on Pinterest"
+          },
+          "shareOnGooglePlus" :{
+            "title": "'Share on Google +'",
+            "default": "Share on Google +"
+          },
+          "share" :{
+            "title": "'Share'",
+            "default": "Share"
+          },
+          "tweet" :{
+            "title": "'Tweet'",
+            "default": "Tweet"
+          },
+          "loginBtn" :{
+            "title": "'Login' button text used in many places",
+            "default": "Login"
+          },
+          "logoutBtn" :{
+            "title": "'Logout' button text used in many places",
+            "default": "Logout"
+          },
+          "myProfile": {
+            "title": "'My profile' button text used in many places",
+            "default": "My profile"
+          },
+          "settings": {
+            "title": "'Settings' button text used in many places",
+            "default": "Settings"
+          },
+          "closeBtn": {
+            "title": "'Close' button text used in many places",
+            "default": "Close"
+          },
+          "signUpBtn": {
+            "title": "'Sign up' button text used in many places",
+            "default": "Sign up"
+          },
+          "loginWithFB" :{
+            "title": "'Login with Facebook' button text",
+            "default": "Login with Facebook"
+          },
+          "loggingYouIn":{
+            "title": "'Logging you in...' message shown while logging in",
+            "default": "Logging you in..."
+          },
+          "fbPermissionError":{
+            "title": "'Facebook login error!' message shown while permission error occurs while logging in",
+            "default": "Facebook login error! You must allow the permissions to log in Facebook"
+          },
+          "fbNoEmailError": {
+            "title": "'Facebook email ID cannot be obtained - error!'",
+            "default": "Facebook login error! Your email cannot be obtained. Either you have disallowed email permission or you don't have a verified email ID on your Facebook account.",
+            "description": "Message shown when the user's email ID cannot be obtained from Facebook due to disallowed permission or if the user hasn't verified his email on his Facebook account"
+          },
+          "noListsYet":{
+            "title": "'No lists yet!' message shown if there are no lists to show",
+            "default": "No lists yet!"
+          },
+          "hereAreSomeLists": {
+            "title": "'Here are some awesome lists' heading shown above lists list",
+            "default": "Here are some awesome lists"
+          },
+          "loadingList": {
+            "title": "'Loading list..' message shown before a list is loaded",
+            "default": "Loading list.."
+          },
+          "youMayAlsoLike": {
+            "title": "'You may also like' heading shown above related lists",
+            "default": "You may also like"
+          },
+          "pageNotFound": {
+            "title": "'Page not found' message in 404 page",
+            "default": "Page not found"
+          },
+          "someErrorOccured": {
+            "title": "'Some error occurred' message",
+            "default": "Some error occurred"
+          },
+          "viewLists": {
+            "title": "'View lists'",
+            "default": "View lists"
+          },
+          "thisIsYourList": {
+            "title": "'This is your list'",
+            "default": "This is your list"
+          },
+          "viewMoreLists": {
+            "title": "'View more lists' link shown below related lists in 'view list' page",
+            "default": "View more lists"
+          },
+          "create": {
+            "title": "'Create' - The create button text in navbar",
+            "default": "Create"
+          },
+          "generalLoginPromptMessage": {
+            "title": "'Login to create your own lists' - The general login prompt message shown in the login popup",
+            "default": "Login to create your own lists and edit others'."
+          },
+          "loginToCreate": {
+            "title": "'Login to create your own lists' message in the login popup shown when users try to 'Create' lists",
+            "default": "Login to create your own lists and edit others'."
+          },
+          "createListPageHeading": {
+            "title": "'Create a list' - Heading of the 'create list' page",
+            "default": "Create a list"
+          },
+          "changesWillNeedApprovalAgain": {
+            "title": "'This list is currently approved! If you make any changes it will need to be approved again by admin.'",
+            "description":  "Notice message to be shown while editing approved list(if auto approval of updates is disabled",
+            "default": "Create a list"
+          },
+          "someErrorsInInput": {
+            "title": "'There are some errors in the data you submitted. Please correct them and try again.'",
+            "description":  "Error message to be shown when server-side validation of user input fails.",
+            "default": "There are some errors in the data you submitted. Please correct them and try again."
+          },
+          "skipAd": {
+            "title": "Skip Ad",
+            "default": "Skip Ad"
+          },
+          "published": {
+            "title": "'Published'",
+            "default": "Published"
+          },
+          "awaitingApproval": {
+            "title": "'Awaiting approval'",
+            "default": "Awaiting approval"
+          },
+          "disapproved": {
+            "title": "'Disapproved'",
+            "default": "Disapproved"
+          },
+          "notPublishedYet": {
+            "title": "'Not published'",
+            "default": "Not published"
+          },
+          "thisListIsAwaitingApproval": {
+            "title": "'This list is awaiting approval'",
+            "default": "This list is awaiting approval"
+          },
+          "thisListIsDisapproved": {
+            "title": "'This list is disapproved'",
+            "default": "This list is disapproved"
+          },
+          "thisListIsNotSubmittedForApproval": {
+            "title": "'This list is not submitted for approval'",
+            "default": "This list is disapproved"
+          },
+          "thisListIsNotPublishedYet": {
+            "title": "'This list is not published yet. Publish it to let others view this list.'",
+            "default": "This list is not published yet. Publish it to let others view this list."
+          },
+          "onlyYouCouldViewThis": {
+            "title": "'Only you could view this list now.'",
+            "default": "Only you could view this list now."
+          },
+          "someChangesPendingApproval": {
+            "title": "'Some changes are pending approval'",
+            "default": "Some changes are pending approval. They will appear once they are approved."
+          },
+          "editListMessageTitle": {
+            "title": "'Edit this list' - message title",
+            "default": "Edit this list"
+          },
+          "editListMessage": {
+            "title": "'You can edit this list....' - Edit this list message",
+            "default": "You can edit this list and make your own list and share with your friends on Facebook and Twitter"
+          },
+          "editThisListBtnText": {
+            "title": "'Edit this list' - Edit this list button text",
+            "default": "Edit this list"
+          },
+          "editListPageHeading": {
+            "title": "'Edit list' - Edit list page heading",
+            "default": "Edit list"
+          },
+          "createListPageHeading": {
+            "title": "'Create list' - Create list page heading",
+            "default": "Create list"
+          },
+          "youAreEditingThisList": {
+            "title": "'You are editing this list'",
+            "description": "Alert shown when a user is editing another user's list",
+            "default": "You are editing this list"
+          },
+          "missingOrInvalidInputCheckMarkedRed": {
+            "title": "'Missing or invalid input. Check the fields marked in red.'",
+            "default": "Missing or invalid input. Check the fields marked in red."
+          },
+          "listBanner": {
+            "title": "'Preview Image' - List's main Image's placeholder text",
+            "default": "Preview Image"
+          },
+          "bannerShouldBeSelected": {
+            "title": "'Banner should be selected'",
+            "default": "Banner should be selected"
+          },
+          "yourListTitleHere": {
+            "title": "'Your list title here' - Title field placeholder",
+            "default": "Your list title here"
+          },
+          "yourListDescriptionHere": {
+            "title": "'Your list description here' - Description field placeholder",
+            "default": "Your list description here"
+          },
+          "category": {
+            "title": "Category",
+            "default": "Category"
+          },
+          "notSelected": {
+            "title": "'Not selected' - Default value to be displayed for 'select' fields",
+            "default": "Not selected"
+          },
+          "tags": {
+            "title": "'Tags'",
+            "default": "Tags"
+          },
+          "changesWillNeedApprovalAgain": {
+            "title": "'If you change this list, it will not be available until it is approved again.'",
+            "description": "The warning to be shown when the user tries to edit one of his already approved list",
+            "default": "If you change this list, it will not be available until it is approved again."
+          },
+          "saveDraft": {
+            "title": "'Save draft' - 'Save draft' button text on the 'create list' page",
+            "default": "Save draft"
+          },
+          "savingList": {
+            "title": "'Saving list' - progress dialog header",
+            "default": "Saving list"
+          },
+          "publishList": {
+            "title": "'Publish list' - 'Publish list' button text on the 'create list' page",
+            "default": ""
+          },
+          "publishingList": {
+            "title": "'Publishing list' - progress dialog header",
+            "default": "Publishing list"
+          },
+          "saveChanges": {
+            "title": "'Save changes' - 'Save changes' button text on the 'edit list' page",
+            "default": "Save changes"
+          },
+          "viewList": {
+            "title": "'View list' - 'View list' button text on the 'create list' page",
+            "default": "View list"
+          },
+          "preview": {
+            "title": "'Preview' - 'Preview' button text on the 'create list' page",
+            "default": "Preview"
+          },
+          "moveUp": {
+            "title": "'Move up'",
+            "default": "Move up"
+          },
+          "moveDown": {
+            "title": "'Move down'",
+            "default": "Move down"
+          },
+          "delete": {
+            "title": "'Delete'",
+            "default": "Delete"
+          },
+          "title": {
+            "title": "'Title'",
+            "default": "Title"
+          },
+          "description": {
+            "title": "'Description'",
+            "default": "Description"
+          },
+          "itemsInTheList": {
+            "title": "'Items in the list'",
+            "default": "Items in the list"
+          },
+          "atleastOneItemIsNeeded": {
+            "title": "'Atleast one item is needed'",
+            "default": "Atleast one item is needed"
+          },
+          "addItem": {
+            "title": "'Add item'",
+            "default": "Add item"
+          },
+          "mediaManagerTitle": {
+            "title": "'Media manager' - Media manager modal title",
+            "default": "Media manager"
+          },
+          "photo": {
+            "title": "'Photo'",
+            "default": "Photo"
+          },
+          "youtubeVideo": {
+            "title": "'Youtube video'",
+            "default": "Youtube video"
+          },
+          "vimeoVideo": {
+            "title": "'Vimeo video'",
+            "default": "Vimeo video"
+          },
+          "soundcloudAudio": {
+            "title": "'Soundcloud audio'",
+            "default": "Soundcloud audio"
+          },
+          "quote": {
+            "title": "'Quote'",
+            "default": "Quote"
+          },
+          "videoUrl": {
+            "title": "'Video url'",
+            "default": "Video url"
+          },
+          "invalidFieldInputError": {
+            "title": "'Invalid input' - Generic Invalid field input error",
+            "default": "Invalid input"
+          },
+          "previewVideo": {
+            "title": "'Preview video'",
+            "default": "Preview video"
+          },
+          "soundcloudUrl": {
+            "title": "'Soundcloud Url'",
+            "default": "Soundcloud Url"
+          },
+          "previewAudio": {
+            "title": "'Preview audio'",
+            "default": "Preview audio"
+          },
+          "emptyFieldError": {
+            "title": "'This field should not be empty'",
+            "default": "This field should not be empty"
+          },
+          "source": {
+            "title": "'Source'",
+            "default": "Source"
+          },
+          "dropOrClickToUpload": {
+            "title": "'Drop files here or click to upload.'",
+            "default": "Drop files here or click to upload."
+          },
+          "back": {
+            "title": "'Back' - back button text",
+            "default": "Back"
+          },
+          "done": {
+            "title": "'Done'",
+            "default": "Done"
+          },
+          "cancelBtn": {
+            "title": "'Cancel button'",
+            "default": "Cancel button"
+          },
+          "nowPublishTheList": {
+            "title": "'You may now publish the list to make it available to public'",
+            "default": "You may now publish the list to make it available to public"
+          },
+          "willBeApprovedByAdmin": {
+            "title": "'Submitted for publishing! It will be available once approved by admin.'",
+            "default": "Submitted for publishing! It will be available once approved by admin."
+          },
+          "changesWillBeApprovedByAdmin": {
+            "title": "'Changes submitted for publishing! It will be visible to users once approved by admin.",
+            "default": "Changes submitted for publishing! It will be visible to users once approved by admin."
+          },
+          "listSaved": {
+            "title": "'List saved'",
+            "default": "List saved"
+          },
+          "viewTheList": {
+            "title": "'View the list'",
+            "default": "View the list"
+          },
+          "previewTheList": {
+            "title": "'Preview the list'",
+            "default": "Preview the list"
+          },
+          "listPublished": {
+            "title": "'List has been published'",
+            "default": "List has been published"
+          },
+          "listWillBePublishedAfterApproval": {
+            "title": "'List will be published after approval'",
+            "default": "List will be published after approval"
+          },
+          "listNotSaved": {
+            "title": "'List not saved' - error dialog title for error while saving list",
+            "default": "List not saved"
+          },
+          "titleShouldNotBeEmpty": {
+            "title": "'Title should not be empty'",
+            "default": "Title should not be empty"
+          },
+          "uploadedImageInvalid": {
+            "title": "'Uploaded image is invalid'",
+            "default": "Uploaded image is invalid"
+          },
+          "uploadedImageTooBig": {
+            "title": "'Uploaded image is too big'",
+            "default": "Uploaded image is too big"
+          },
+          "uploadedImageInvalidOrBig": {
+            "title": "'Uploaded image is invalid or too big'",
+            "default": "Uploaded image is invalid or too big"
+          },
+          "orUploadViaUrl": {
+            "title": "'Or upload from url'",
+            "default": "Or upload from url"
+          },
+          "uploadViaUrl": {
+            "title": "'Upload from url' - Button text",
+            "default": "Upload from url"
+          },
+          "imageUrl": {
+            "title": "'Image url'",
+            "default": "Image url"
+          },
+          "imageSource": {
+            "title": "'Image source webpage url'",
+            "default": "Image source webpage url"
+          },
+          "uploading": {
+            "title": "'Uploading..' - button loading state text",
+            "default": "Uploading.."
+          },
+          "videoLinkInvalid": {
+            "title": "'Video link is invalid'",
+            "default": "Video link is invalid"
+          },
+          "audioLinkInvalid": {
+            "title": "'Audio link is invalid'",
+            "default": "Audio link is invalid"
+          },
+          "changesToThisListArePendingApproval": {
+            "title": "'Changes to this list are pending approval. The changes will be visible to users once it is approved.'",
+            "default": "Changes to this list are pending approval. The changes will be visible to users once it is approved."
+          },
+          "passwordReminder": {
+            "title": "'Password reminder' - email subject",
+            "default": "Password reminder"
+          },
+          "name": {
+            "title": "'Name'",
+            "default": "Name"
+          },
+          "email": {
+            "title": "'Email'",
+            "default": "Email"
+          },
+          "password": {
+            "title": "'Password'",
+            "default": "Password"
+          },
+          "confirmPassword": {
+            "title": "'Confirm password'",
+            "default": "Confirm password"
+          },
+          "lostYourPassword": {
+            "title": "'Lost your password?'",
+            "default": "Lost your password?"
+          },
+          "alreadyRegisteredLoginHere": {
+            "title": "'Already registered? Click here to login.'",
+            "default": "Already registered? Click here to login."
+          },
+          "dontHaveAccountSignupHere": {
+            "title": "'Don't have an account? Sign up here.'",
+            "default": "Don't have an account? Sign up here."
+          },
+          "orSignUpWithYourEmail": {
+            "title": "'or signup with your email'",
+            "default": "or signup with your email"
+          },
+          "orLoginWithYourEmail": {
+            "title": "'or login with your email'",
+            "default": "or login with your email"
+          },
+          "emailOrPasswordIncorrect": {
+            "title": "'Email or password is incorrect'",
+            "default": "Email or password is incorrect"
+          },
+          "registrationSuccessfulConfirmEmailNow": {
+            "title": "'Confirm your email by clicking the confirmation link in the email we just sent you.'",
+            "default": "Confirm your email by clicking the confirmation link in the email we just sent you."
+          },
+          "confirmationEmailSent": {
+            "title": "'Confirmation email sent. Please check your inbox.'",
+            "default": "Confirmation email sent. Please check your inbox."
+          },
+          "invalidConfirmationCode": {
+            "title": "'Invalid confirmation code'",
+            "default": "Invalid confirmation code"
+          },
+          "successfullyVerifiedEmail": {
+            "title": "'You have successfully verified your account.'",
+            "default": "You have successfully verified your account."
+          },
+          "emailNotConfirmedYet": {
+            "title": "'You have not verified your email ID yet. Please verify and try again.'",
+            "default": "You have not verified your email ID yet. Please verify and try again."
+          },
+          "resetPassword": {
+            "title": "'Reset Password'",
+            "default": "Reset Password"
+          },
+          "sendReminder": {
+            "title": "'Send reminder'",
+            "default": "Send reminder"
+          },
+          "resendConfirmationEmail": {
+            "title": "'Resend confirmation email'",
+            "default": "Resend confirmation email"
+          },
+          "userNotFound": {
+            "title": "'User not found'",
+            "default": "User not found"
+          },
+          "changePhotoBtn": {
+            "title": "'Change photo'",
+            "default": "Change photo"
+          },
+          "updateProfile": {
+            "title": "'Update profile'",
+            "default": "Update profile"
+          },
+          "currentPassword": {
+            "title": "'Current password'",
+            "default": "Current password"
+          },
+          "newPassword": {
+            "title": "'New password'",
+            "default": "New password"
+          },
+          "repeatNewPassword": {
+            "title": "'Repeat new password'",
+            "default": "Repeat new password"
+          },
+          "changePassword": {
+            "title": "'Change password'",
+            "default": "Change password"
+          },
+          "yourCurrentPasswordIsIncorrect": {
+            "title": "'Your old password is incorrect'",
+            "default": "Your old password is incorrect"
+          },
+          "passwordChanged": {
+            "title": "'Password changed successfully'",
+            "default": "Password changed successfully"
+          }
+        }
+      }
+    }
+  }
+}

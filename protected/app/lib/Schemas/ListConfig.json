@@ -1,0 +1,108 @@
+{
+  "gridType": {
+    "type": "string",
+    "title": "Grid style",
+    "description": "The style of the grid showing the list of 'Lists'",
+    "enum": ["two-column", "three-column"]
+  },
+  "showFacebookComments" : {
+    "type": "boolean",
+    "title": "Enable Facebook comments for lists?",
+    "description": "Display Facebook comments box below list results after a user finishes a list"
+  },
+  "showSharePreview" : {
+    "type": "boolean",
+    "title": "Show share preview",
+    "description": "Show share 'preview' with image below a list on the 'view list' page"
+  },
+  "autoApprove" : {
+    "type": "boolean",
+    "title": "Auto-approve user-created lists",
+    "description": "If this option is enabled, all new lists created by the users will be automatically approved and published on the site"
+  },
+  "autoApproveUpdates" : {
+    "type": "boolean",
+    "title": "Auto-approve all updates to already approved lists",
+    "description": "If auto-approve is disabled and this option is enabled, all updates(edits) to lists which are already approved will be automatically accep and published on the site. If 'Auto-update'(the above option) is disabled, this option is discarded and updates will always be automatically approved."
+  },
+  "fileUploadMaxSize" : {
+    "type": "number",
+    "title": "Maximum File upload size (in MB) for user uploads",
+    "description": "Important: Should not be higher than the the 'upload_max_filesize' and 'post_max_size'. If the maximum upload size supported by your server is lower than the value you provide here, this value will have no effect.",
+    "required": true
+  },
+  "perPageLimit" : {
+    "type": "number",
+    "title": "Number of lists per page",
+    "required": true
+  },
+  "youMayAlsoLikeShortCode" : {
+    "type": "string",
+    "title": "You may also like Shortcode - The short-code used to display 'You may also like' list. Refer the list of available shortcodes in the documentation.",
+    "required": true
+  },
+  "viewListMode" : {
+    "type": "string",
+    "title": "View list page mode - Either to show all items in a single page or each item in a new page.",
+    "required": true,
+    "enum": ["single-page", "multi-page"]
+  },
+  "showAdAfterEvery" : {
+    "type": "number",
+    "title": "Number of list items after which an Interstitial ad should be shown(with a skip button). [Used only in 'multi-page' mode]. Choose 0 to disable. Set the AD code in the widgets page.",
+    "description": "If you choose 3, a page with ad will be shown after every 3 items of the list. ie, after the 3rd one, 6th one, 9th one and so on.",
+    "required": true,
+    "enum": [0,1,2,3,4,5,6,7,8,9,10]
+  },
+  "enableListEditNotification": {
+    "type": "boolean",
+    "title": "Enable 'List edited' Notification",
+    "description": "Enable/Disable notifications for a user when a list created by him/her is edited by another user."
+  },
+  "listEditNotificationMailSubjectTemplate": {
+    "type": "text",
+    "title": "'List edited' Notification email 'subject' template",
+    "description": "The template for notification email SUBJECT."
+  },
+  "listEditNotificationMailTemplate": {
+    "type": "textarea",
+    "title": "'List edited' Notification email template",
+    "description": "The template for notification email."
+  },
+  "enableListApprovedNotification" : {
+    "type": "boolean",
+    "title": "Enable 'List approved' Notification",
+    "description": "Enable/Disable notifications for a user when a list created by him/her is approved by admin."
+  },
+  "listApprovedNotificationMailSubjectTemplate": {
+    "type": "text",
+    "title": "'List approved' Notification email 'subject' template",
+    "description": "The template for 'list approved' notification email SUBJECT."
+  },
+  "listApprovedNotificationMailTemplate": {
+    "type": "textarea",
+    "title": "'List approved' Notification email template",
+    "description": "The template for 'list approved' notification email."
+  },
+  "addUserPicAndNameOnListOG": {
+    "type": "boolean",
+    "title": "Add user's name and profile picture on List preview images on Social Media",
+    "description": "Enable/disable adding user's name and profile picture on List preview images on Facebook, Twitter, etc(OG image)"
+  },
+  "listImageTextFont": {
+    "type": "image",
+    "title": "The True Type Font file to be used for writing user's name to list preview image"
+  },
+  "listImageTextFontSize": {
+    "type": "number",
+    "title": "The Font SIZE to be used for writing user's name to list preview image"
+  },
+  "listImageTextBgColor": {
+    "type": "color",
+    "title": "The background color for writing user's name to list preview image"
+  },
+  "listImageTextColor": {
+    "type": "color",
+    "title": "The TEXT color for writing user's name to list preview image"
+  }
+}

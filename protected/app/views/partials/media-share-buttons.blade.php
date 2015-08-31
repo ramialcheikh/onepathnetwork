@@ -1,0 +1,4 @@
+<a class="btn btn-block btn-social-facebook social-sharing-btn" data-social-network="facebook" data-url="{{ListHelpers::viewListUrl($list)}}" data-title="{{{$list->title}}}" href=""><i class="fa fa-2x fa-facebook"></i>
+<a class="btn btn-block btn-social-twitter social-sharing-btn" data-social-network="twitter" data-url="{{ListHelpers::viewListUrl($list)}}" data-title="{{{$list->title}}}" href=""><i class="fa fa-2x fa-twitter"></i>
+<a class="btn btn-block btn-social-googleplus social-sharing-btn" data-social-network="googleplus" data-url="{{ListHelpers::viewListUrl($list)}}" data-title="{{{$list->title}}}" href=""><i class="fa fa-2x fa-google-plus"></i></a>
+<a class="btn btn-block btn-social-pinterest social-sharing-btn" data-social-network="pinterest" data-url="{{ListHelpers::viewListUrl($list)}}" data-title="{{{$list->title}}}" @if($media['type'] == "photo") data-media="{{ asset($media['url']) }}" @endif href=""><i class="fa fa-2x fa-pinterest"></i></a>

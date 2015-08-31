@@ -1,0 +1,237 @@
+{
+  "type": "array",
+  "required": true,
+  "title": "Language",
+  "items": {
+    "type": "object",
+    "title": "Language",
+    "properties": {
+      "name": {
+        "type": "text",
+        "title": "Language name",
+        "required": true
+      },
+      "code" : {
+        "type": "text",
+        "title": "Language code (example: en, es, etc)",
+        "required": true
+      },
+      "fb_code" : {
+        "type": "text",
+        "title": "Facebook locale code (eg: en_US, es_ES, etc)",
+        "description": "<a href=\"https://www.facebook.com/translations/FacebookLocales.xml\">Click here for Facebook codes reference</a>",
+        "required": true
+      },
+      "direction" : {
+        "type": "text",
+        "title": "Direction",
+        "required": true,
+        "enum": [
+          "ltr",
+          "rtl"
+        ],
+        "default" : "ltr"
+      },
+      "strings": {
+        "type": "object",
+        "title": "Strings",
+        "properties": {
+          "categories" : {
+            "title": "'Categories'",
+            "default": "Categories"
+          },
+          "@@singular@@" : {
+            "title": "'@@singular-pascalCase@@'",
+            "default": "@@singular-pascalCase@@"
+          },
+          "@@plural@@" : {
+            "title": "'@@plural-pascalCase@@' in navbar",
+            "default": "@@plural-pascalCase@@"
+          },
+          "latest" : {
+            "title": "'Latest' in navbar",
+            "default": "Latest"
+          },
+          "popular" : {
+            "title": "'Popular' in navbar",
+            "default": "Popular"
+          },
+          "latest@@plural-pascalCase@@" : {
+            "title": "'Latest @@plural-pascalCase@@' in heading",
+            "default": "Latest @@plural-pascalCase@@"
+          },
+          "popular@@plural-pascalCase@@" : {
+            "title": "'Popular @@plural-pascalCase@@' in heading",
+            "default": "Popular @@plural-pascalCase@@"
+          },
+          "comments": {
+            "title": "'Comments' : Facebook comments box heading",
+            "default": "Comments"
+          },
+          "contactUs":{
+            "title": "'Contact us' in navbar",
+            "default": "Contact us"
+          },
+          "likeUsOnFB" :{
+            "title": "'Like us on Facebook'",
+            "default": "Like us on Facebook"
+          },
+          "shareOnFB" :{
+            "title": "'Share on Facebook'",
+            "default": "Share on Facebook"
+          },
+          "shareOnTwitter" :{
+            "title": "'Share on Twitter'",
+            "default": "Share on Twitter"
+          },
+          "shareOnPinterest" :{
+            "title": "'Share on Pinterest'",
+            "default": "Share on Pinterest"
+          },
+          "shareOnGooglePlus" :{
+            "title": "'Share on Google +'",
+            "default": "Share on Google +"
+          },
+          "loginBtn" :{
+            "title": "'Login' button text used in many places",
+            "default": "Login"
+          },
+          "logoutBtn" :{
+            "title": "'Logout' button text used in many places",
+            "default": "Logout"
+          },
+          "closeBtn": {
+            "title": "'Close' button text used in many places",
+            "default": "Close"
+          },
+          "signUpBtn": {
+            "title": "'Sign up' button text used in many places",
+            "default": "Sign up"
+          },
+          "loginWithFB" :{
+            "title": "'Login with Facebook' button text",
+            "default": "Login with Facebook"
+          },
+          "loggingYouIn":{
+            "title": "'Logging you in...' message shown while logging in",
+            "default": "Logging you in..."
+          },
+          "fbPermissionError":{
+            "title": "'Facebook login error!' message shown while permission error occurs while logging in",
+            "default": "Facebook login error! You must allow the permissions to log in Facebook"
+          },
+          "no@@plural-pascalCase@@Yet":{
+            "title": "'No @@singular@@zes yet!' message shown if there are no @@singular@@zes to show",
+            "default": "No @@singular@@zes yet!"
+          },
+          "hereAreSome@@plural-pascalCase@@": {
+            "title": "'Here are some awesome @@singular@@zes' heading shown above @@singular@@zes list",
+            "default": "Here are some awesome @@singular@@zes"
+          },
+          "loading@@singular-pascalCase@@": {
+            "title": "'Loading @@singular@@..' message shown before a @@singular@@ is loaded",
+            "default": "Loading @@singular@@.."
+          },
+          "youMayAlsoLike": {
+            "title": "'You may also like' heading shown above related @@singular@@zes",
+            "default": "You may also like"
+          },
+          "pageNotFound": {
+            "title": "'Page not found' message in 404 page",
+            "default": "Page not found"
+          },
+          "someErrorOccured": {
+            "title": "'Some error occured' message",
+            "default": "Some error occured"
+          },
+          "start@@singular-pascalCase@@": {
+            "title": "'Start @@singular@@' button text",
+            "default": "Start @@singular@@"
+          },
+          "correctAnswers": {
+            "title": "'Correct answers' heading above correct answers displayed at the end of @@singular@@",
+            "default": "Correct answers"
+          },
+          "clickLikeToChooseThisOption": {
+            "title": "'Click like to choose this option' prompt in FB like type choice",
+            "default": "Click like to choose this option"
+          },
+          "question": {
+            "title": "'Question' for use in many places",
+            "default": "Question"
+          },
+          "correct": {
+            "title": "'Correct' for use in many places",
+            "default": "Correct"
+          },
+          "itsTheCorrectAnswer": {
+            "title": "'It's the correct answer' for response on answering a question",
+            "default": "It's the correct answer"
+          },
+          "wrong": {
+            "title": "'Wrong' for use in many places",
+            "default": "Wrong"
+          },
+          "theCorrectAnswerIs": {
+            "title": "'The correct answer is' for response on answering a question",
+            "default": "The correct answer is"
+          },
+          "okNext": {
+            "title": "'Okay! Next' for 'next' button on answering a question",
+            "default": "Okay! Next"
+          },
+          "skip": {
+            "title": "'Skip' for use in many places",
+            "default": "Skip"
+          },
+          "start": {
+            "title": "'Start' for use in many places",
+            "default": "Start"
+          },
+          "finish": {
+            "title": "'Finish' for use in many places",
+            "default": "Finish"
+          },
+          "preparingResult": {
+            "title": "'Preparing the result' message shown after finishing @@singular@@",
+            "default": "Preparing the result"
+          },
+          "hereIsTheResultIGot": {
+            "title": "'Here is the result I got' message shown when a user lands on a @@singular@@ from a result shared by another user",
+            "default": "Here is the result I got"
+          },
+          "nowTryYourselfAndLetMeKnowResult": {
+            "title": "'Now try it yourself and let me know your result!' message shown when a user lands on a @@singular@@ from a result shared by another user",
+            "default": "Now try it yourself and let me know your result!"
+          },
+          "seeCorrectAnswers": {
+            "title": "'See correct answers' button text shown after finishing @@singular@@",
+            "default": "See correct answers"
+          },
+          "heyShareItPrompt": {
+            "title": "'Hey! Share your result with your friends!' message shown after finishing @@singular@@",
+            "default": "Hey! Share your result with your friends!"
+          },
+          "iGot": {
+            "title": "'I got' used in sharing the user's result on social media",
+            "default": "I got",
+            "description": "For example: 'I got 100% Cute - How Cute are you?"
+          },
+          "tryThis@@singular-pascalCase@@Again": {
+            "title": "'Wanna try this @@singular@@ again?' link shown to retake the @@singular@@ after it is finished",
+            "default": "Wanna try this @@singular@@ again?"
+          },
+          "wannaTryMore@@plural-pascalCase@@": {
+            "title": "'Wanna try more awesome @@singular@@zes?' Message shown to prompt the user to like your facebook page",
+            "default": "Wanna try more awesome @@singular@@zes?",
+            "description": "For example: 'Wanna try more awesome @@singular@@zes? Like us on Facebook!"
+          },
+          "viewMore@@plural-pascalCase@@": {
+            "title": "'View more @@singular@@zes' link shown below related @@singular@@zes in 'view @@singular@@' page",
+            "default": "View more @@singular@@zes"
+          }
+        }
+      }
+    }
+  }
+}

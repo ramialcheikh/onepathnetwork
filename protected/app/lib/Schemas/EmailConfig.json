@@ -1,0 +1,59 @@
+{
+  "fromName": {
+    "type": "string",
+    "title": "Email 'FROM' name",
+    "required": true
+  },
+  "fromEmail": {
+    "type": "string",
+    "title": "Email 'FROM' email",
+    "required": true
+  },
+  "commonFooterMessage": {
+    "type": "textarea",
+    "title": "Common email footer message. To be appended to all emails sent to users."
+  },
+  "driver": {
+    "type": "string",
+    "title": "Email delivery method",
+    "description":  "If you choose SMTP, add the SMTP details in the fields starting with 'SMTP' below. If you choose 'PHP-mail-function', the SMTP details are not needed.",
+    "enum": [
+      "PHP-mail-function",
+      "smtp"
+    ]
+  },
+  "smtpHost": {
+    "type": "string",
+    "title": "SMTP host"
+  },
+  "smtpPort": {
+    "type": "string",
+    "title": "SMTP port"
+  },
+  "smtpEncryption": {
+    "type": "string",
+    "title": "SMTP encryption",
+    "enum": [
+      "tls",
+      "ssl",
+      ""
+    ]
+  },
+  "smtpUsername": {
+    "type": "string",
+    "title": "SMTP username"
+  },
+  "smtpPassword": {
+    "type": "password",
+    "title": "SMTP password"
+  },
+  "confirmationMailSubject": {
+    "type": "string",
+    "title": "'Email confirmation' mail subject (Sent to users when they sign up with email))"
+  },
+  "confirmationMailMessageTemplate": {
+    "type": "textarea",
+    "title": "'Email confirmation' mail template (Sent to users when they sign up with email))",
+    "description": "You have to include the text '[ConfirmationLink]' in the message which will be replaced with the confirmation link."
+  }
+}

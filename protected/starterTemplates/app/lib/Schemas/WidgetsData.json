@@ -1,0 +1,43 @@
+{
+  "widgets": [
+    {
+      "id": "sideBar",
+      "name": "Sidebar"
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "widgets": []
+    },
+    {
+      "id": "below@@singular-pascalCase@@",
+      "name": "Below @@singular@@"
+    },
+    {
+      "id": "homeHeader",
+      "name": "Home header",
+      "widgets": []
+    },
+    {
+      "id": "above@@plural-pascalCase@@List",
+      "name": "Above @@plural-pascalCase@@ list"
+    },
+    {
+      "id": "below@@plural-pascalCase@@List",
+      "name": "Below @@plural@@ list"
+    },
+    {
+      "id": "commonFooterSection",
+      "name": "Common footer section"
+    },
+    {
+      "id": "navbarLinks",
+      "name": "Links in navbar",
+      "widgets": []
+    },
+    {
+      "id": "above@@singular-pascalCase@@Question",
+      "name": "Above @@singular@@ question"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+.media-manager-modal {
+  .main-menu {
+    text-align: center;
+  }
+  .sub-menu {
+    display: none;
+  }
+  .sub-menu-screen {
+    display: none;
+  }
+  .back-btn {
+    display: none;
+  }
+  &.show-sub-menu {
+    .main-menu {
+      display: none;
+    }
+    .sub-menu {
+      display: block;
+    }
+    .back-btn {
+      display: block;
+    }
+  }
+  .menu-item {
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+    border: solid 1px #eee;
+    margin: 2px;
+    cursor: pointer;
+    background: #f8f8f8;
+    font-size: small;
+    width: 140px;
+    .menu-item-text {
+      margin-top: 10px;
+    }
+    &:hover {
+      background: #fff;
+    }
+
+    .photo-icon {
+      color: #299ff4;
+    }
+    .quote-icon {
+      color: #FFB329;
+    }
+
+  }
+
+  .media-input-form {
+    margin-bottom: 20px;
+  }
+
+  .embed-preview {
+    display: none;
+    margin: 0px auto;
+    background: #222;
+  }
+
+  .dropzone.image-drop-zone {
+    border: 2px dashed rgba(0,0,0,0.2) !important;
+
+  }
+  .dz-error-message {
+    opacity: 1 !important;
+  }
+  .photo-sub-menu .image-upload-error {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .upload-image-via-url-preview {
+    margin-top: 10px;
+    img {
+      max-width: 100%;
+      max-height: 300px;
+    }
+  }
+  /*//Disable clicks when max files reached
+  .dz-max-files-reached {
+    pointer-events: none;
+    cursor: default;
+  }*/
+}
+
+@media ( max-width: 479px ) {
+  .media-manager-modal {
+    .menu-item {
+      display: block;
+      width: 100%;
+      text-align: left;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .menu-item .fa {
+      width: 30px;
+      font-size: 2em;
+    }
+
+    .menu-item .menu-item-text {
+      display: inline-block;
+      margin-left: 10px;
+      font-weight: bold;
+      margin-top: 0px;
+    }
+
+    .menu-item .fa.fa-soundcloud {
+      font-size: 1.4em;
+    }
+
+    .menu-item .fa.fa-photo {
+      font-size: 1.6em;
+    }
+    .menu-item .fa.fa-quote-right {
+      font-size: 1.6em;
+    }
+  }
+}

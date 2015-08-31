@@ -1,0 +1,319 @@
+body {
+  padding-top: 53px;
+  background: #f9f9f9 !important;
+}
+
+hr{
+  border-color: @hr-border;
+}
+
+.rtl-language {
+  ul.list-unstyled, ol.list-unstyled {
+    padding-right: 0;
+  }
+  .media > .pull-left {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  .bootstrap-tagsinput {
+    text-align: right;
+  }
+  .nav{
+    padding: 0 !important;
+  }
+
+}
+
+
+//Override modal
+.modal-backdrop {
+  background: @modalBackdropColor !important;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.modal-content {
+  border-radius: @border-radius-base !important;
+  box-shadow: none !important;
+  border: none !important;
+
+  .modal-title {
+    padding: 20px 0px;
+    text-align: center;
+  }
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .1s linear;
+  -moz-transition: opacity .1s linear;
+  -ms-transition: opacity .1s linear;
+  -o-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+}
+
+.alert-danger {
+  background: #FF2626;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+
+  a {
+    color: #ffd52f;
+  }
+}
+
+#headerUserMenu {
+  a.dropdown-toggle {
+    padding: 10px;
+  }
+  .before-login-actions {
+    display: block;
+  }
+  .after-login-actions {
+    display: none;
+  }
+  &.logged-in {
+    .before-login-actions {
+      display: none;
+    }
+    .after-login-actions {
+      display: block;
+    }
+  }
+  #userProfilePicture {
+    vertical-align: middle;
+    overflow: visible;
+
+  }
+}
+
+.rtl-language #userProfilePicture {
+  margin-right: 0px !important;
+  margin-left: 10px;
+}
+
+.navbar-nav > li > a {
+  padding: 15px 15px;
+}
+.navbar-form .form-group + .btn {
+  background: transparent;
+}
+
+.navbar-search-form {
+  display: none;
+  .search-btn {
+    float: right;
+    margin-left: 10px;
+    background-color: transparent;
+  }
+  .form-group {
+    overflow: hidden;
+  }
+}
+.navbar.show-search {
+  .navbar-search-form {
+    display: block;
+  }
+  .reveal-search-btn {
+    .fa-search {
+      display: none;
+    }
+    .fa-times {
+      display: block;
+    }
+  }
+  .navbar-main-links {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+    display: none;
+  }
+}
+
+.reveal-search-btn {
+  .fa {
+    line-height: 1.45;
+  }
+  .fa-search {
+    display: block;
+  }
+  .fa-times {
+    display: none;
+  }
+}
+
+.nav + .navbar-search-form.show {
+  display: none;
+}
+
+.belowNavbar-widget-section {
+  margin-top: 10px;
+}
+
+#loginDialog {
+  .dialog__content {
+    max-width: 360px;
+    padding: 0px;
+  }
+  .heading {
+    background: #eee;
+    padding: .5em 0;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+  }
+  .dialog-footer {
+    margin-bottom: 20px;
+  }
+  .login-prompt-message {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px 30px;
+  }
+
+  .logging-in-msg {
+    display: none;
+  }
+
+  .loading-anim {
+    margin: 20px auto;
+    display: none;
+  }
+
+  #socialLoginError {
+    margin: 20px auto;
+  }
+
+  &.logging-in {
+    .loading-anim {
+      display: block;
+    }
+    .logging-in-msg {
+      display: block !important;
+    }
+    .login-with-fb-btn{
+      display: none;
+    }
+    .login-signup-tabs {
+      display: none;
+    }
+
+  }
+}
+
+#categoryModal {
+  .modal-dialog {
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .list-group {
+    padding: 10px 40px;
+    margin-bottom: 0px;
+  }
+
+}
+
+.help-block.error-block {
+  display: none;
+}
+
+.has-error .help-block.error-block {
+  display: block;
+}
+
+.login-panel label.error {
+  .text-danger;
+}
+
+.login-panel .login-signup-tabs {
+  margin-top: 10px;
+}
+
+blockquote {
+  border-left: none;
+  text-align: left;
+  background: #fff;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 20px;
+  border: solid 1px #ddd;
+}
+blockquote footer {
+  background: transparent;
+}
+/* Insert the pseudo element - replicating what FontAwesome does */
+blockquote:before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  float: left;
+  font-size: 3em;
+  line-height: 1em;
+  margin-right: 20px;
+  margin-top: -.5em;
+}
+
+@media (max-width: 767px) {
+  .reveal-search-btn {
+    display: none !important;
+  }
+  .navbar-search-form {
+    display: block !important;
+  }
+  h1,
+  .h1 {
+    font-size: 26px;
+  }
+  h2,
+  .h2 {
+    font-size: 24px;
+  }
+  h3,
+  .h3 {
+    font-size: 22px;
+  }
+  h4,
+  .h4 {
+    font-size: 22px;
+  }
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+  h6,
+  .h6 {
+    font-size: 18px;
+  }
+
+  h1,h2,h3, .h1,.h2,.h3 {
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-search-form {
+    padding-right: 0px;
+  }
+  .rtl-language {
+    .navbar-search-form {
+      padding-left: 0px;
+    }
+    .navbar-header {
+      float: right !important;
+    }
+    .navbar-right {
+      float: left !important;
+    }
+
+    .navbar-left {
+      float: right !important;
+    }
+  }
+
+}
